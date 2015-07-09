@@ -24,6 +24,6 @@ class FanoutServiceProviderTest extends \PHPUnit_Framework_TestCase
             ));
         $tp = $app['fanout'];
 
-        $this->assertInstanceOf("\Fanout", $tp);
+        $this->assertInstanceOf("\\Fanout\\Fanout", $tp);
     }
 }
