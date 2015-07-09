@@ -2,6 +2,7 @@
 
 namespace Silex\Provider;
 
+use Fanout\Fanout;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 
@@ -18,7 +19,7 @@ class FanoutServiceProvider implements ServiceProviderInterface
                     throw new \Exception('fanout.realmkey undefined');
                 }
 
-                $fanout = new \Fanout(
+                $fanout = new Fanout(
                     $app['fanout.realm'], $app['fanout.realmkey']
                 );
 
