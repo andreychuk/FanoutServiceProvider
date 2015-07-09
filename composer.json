@@ -11,7 +11,7 @@
   ],
   "version": "0.1",
   "require":{
-    "fanout/fanout": "dev-master",
+    "fanout/fanout": "2.0.0",
     "silex/silex": "~1.0"
   },
   "require-dev": {
